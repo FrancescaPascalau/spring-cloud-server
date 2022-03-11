@@ -13,5 +13,5 @@ spring:
         bootstrap: true
   security:
     user:
-      name: user
-      password: password
+      name: root
+      password: s3cr3t
