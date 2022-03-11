@@ -6,9 +6,11 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/FrancescaPascalau/spring-cloud-server.git
+          uri: git@github.com:FrancescaPascalau/spring-cloud-server.git
+          clone-on-start: true
         bootstrap: true
-      enabled: true
-
-  profiles:
-    active: composite
+      profile: composite
+  security:
+    user:
+      name: user
+      password: password
