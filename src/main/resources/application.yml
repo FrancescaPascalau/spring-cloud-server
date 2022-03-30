@@ -2,16 +2,11 @@ server:
   port: 8888
 
 spring:
-  profiles:
-    active: composite
+  application:
+    name: spring-cloud-server
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/FrancescaPascalau/spring-cloud-server.git
-          clone-on-start: true
-        bootstrap: true
-  security:
-    user:
-      name: root
-      password: s3cr3t
+          uri: https://github.com/FrancescaPascalau/config-repo.git
+          search-paths: '{application}/{profile}'
