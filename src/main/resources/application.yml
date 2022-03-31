@@ -10,3 +10,9 @@ spring:
         git:
           uri: https://github.com/FrancescaPascalau/config-repo.git
           search-paths: '{application}/{profile}'
+
+encrypt:
+#  key: myencryptkey
+#  encrypted-prop: "{cipher}689fcbb3fcca766d91ec197de2a3612ede07a6bb3d85855e2b787fac64f5735c"
+  key-store:
+    password: password
