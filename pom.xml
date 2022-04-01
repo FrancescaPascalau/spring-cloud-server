@@ -17,6 +17,7 @@
     <properties>
         <java.version>15</java.version>
         <spring-cloud.version>2021.0.1</spring-cloud.version>
+        <spring-cloud-aws-parameter-store-config.version>2.4.0</spring-cloud-aws-parameter-store-config.version>
     </properties>
 
     <dependencies>
@@ -27,6 +28,11 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.awspring.cloud</groupId>
+            <artifactId>spring-cloud-aws-parameter-store-config</artifactId>
+            <version>${spring-cloud-aws-parameter-store-config.version}</version>
         </dependency>
     </dependencies>
 

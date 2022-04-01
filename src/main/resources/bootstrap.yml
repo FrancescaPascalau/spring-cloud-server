@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-cloud-server
+  cloud:
+    config:
+      enabled: false
+
+aws:
+  paramstore:
+    enabled: true
+cloud:
+  aws:
+    region:
+      static: eu-west-1
